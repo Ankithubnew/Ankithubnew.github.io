@@ -96,6 +96,12 @@ body {
   opacity: 0.7;
 }
 
+.header>a>img{
+  width: 80px;
+  height: 80px;
+  /* border-radius: 40%; */
+}
+
 #darkMode-icon {
   font-size: 2.4rem;
   color: var(--white-color);
@@ -137,6 +143,7 @@ section {
   font-size: 5.6rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
+  color: #754ef9;
 }
 
 .home-content p {
@@ -469,12 +476,12 @@ span {
 }
 
 .portfolio-layer a {
-  margin-bottom: 5px;
+  margin-top: 5px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   background: var(--white-color);
   border-radius: 50%;
 }
@@ -560,6 +567,31 @@ span {
 .contact {
   min-height: auto;
   padding-bottom: 7rem;
+}
+.contact .social-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 2.5rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+.contact .social-media a:hover {
+  background: var(--main-color);
+  color: var(--white-color);
 }
 
 .contact h2 {
@@ -839,8 +871,29 @@ span {
 
   .home .profession-box .profession:nth-child(1) i {
     margin-right: 0;
+    /* bottom: 0;
+    color: red;
+    background-color: aqua; */
+  }
+  .home .profession h3 {
+    font-size: 2.2rem;
+    line-height: 1;
+    font-weight: 600;
   }
 
+  /* .home .profession-box .profession:nth-child(2) i {
+    margin-right: 0;
+    
+  }
+
+  .home .profession-box .profession:nth-child(3) i {
+    margin-right: 0;
+  }
+
+  .home .profession-box .profession:nth-child(4) i {
+    margin-right: 0;
+  } */
+  
   .home .profession-box .profession:nth-child(2) {
     transform: rotate(0deg) translate(0, -325px);
   }
